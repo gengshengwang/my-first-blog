@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'watson.mysql.pythonanywhere-services.com',
+        'USER': 'watson',
+        'PASSWORD': 'CloudPrinterDB',
+        'HOST': 'localhost',  # 或者你数据库服务器的地址
+        'PORT': '3306',       # 默认MySQL端口
     }
 }
 
